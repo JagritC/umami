@@ -1,0 +1,28 @@
+{
+  "appRuntime": {
+    "kind": "web",
+    "runner": "docker",
+    "entry": {
+      "type": "compose",
+      "files": ["docker-compose.yml"],
+      "service": "umami"
+    },
+    "url": {
+      "hostPort": 3000,
+      "path": "/"
+    },
+    "ready": {
+      "path": "/api/heartbeat",
+      "timeoutSeconds": 240
+    },
+    "open": {
+      "path": "/"
+    },
+    "composeEnv": {
+      "APP_SECRET": "7065f48279295d1386dc9a6291b782e1c54b54471ef5a88f97c77dac99ef8490"
+    },
+    "e2e": {
+      "testCommand": "curl -fsS http://127.0.0.1:3000/api/heartbeat | grep -q '\"ok\":true' && echo 'umami heartbeat OK'"
+    }
+  }
+}
