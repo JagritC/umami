@@ -14,6 +14,7 @@ import { useMessages, useUpdateQuery } from '@/components/hooks';
 import { Logo } from '@/components/svg';
 import { setClientAuthToken } from '@/lib/client';
 import { setUser } from '@/store/app';
+import styles from './LoginForm.module.css';
 
 export function LoginForm() {
   const { t, labels, getErrorMessage } = useMessages();
@@ -31,7 +32,7 @@ export function LoginForm() {
   };
 
   return (
-    <Column justifyContent="center" alignItems="center" gap="6">
+    <Column className={styles.loginForm} justifyContent="center" alignItems="center" gap="6">
       <Icon size="lg">
         <Logo />
       </Icon>
