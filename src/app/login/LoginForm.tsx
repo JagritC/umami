@@ -58,7 +58,7 @@ export function LoginForm() {
           <FormSubmitButton
             data-test="button-submit"
             variant="primary"
-            style={{ flex: 1 }}
+            className="w-full"
             isDisabled={false}
           >
             {t(labels.login)}
