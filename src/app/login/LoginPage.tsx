@@ -8,8 +8,11 @@ export function LoginPage() {
       alignItems="center"
       justifyContent="flex-start"
       height="100vh"
-      backgroundColor="surface-raised"
-      style={{ paddingTop: '15vh' }}
+      style={{
+        boxSizing: 'border-box',
+        paddingTop: '15vh',
+        background: 'linear-gradient(to bottom, #f8fafc 0%, #eef2f7 100%)',
+      }}
     >
       <LoginForm />
     </Column>
