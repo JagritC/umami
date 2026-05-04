@@ -58,7 +58,7 @@ export function LoginForm() {
           <FormSubmitButton
             data-test="button-submit"
             variant="primary"
-            style={{ flex: 1 }}
+            style={{ flex: 1, borderRadius: 14 }}
             isDisabled={false}
           >
             {t(labels.login)}
