@@ -58,6 +58,7 @@ export function LoginForm() {
           <FormSubmitButton
             data-test="button-submit"
             variant="primary"
+            className="login-submit-button"
             style={{ flex: 1 }}
             isDisabled={false}
           >
