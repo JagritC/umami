@@ -36,7 +36,11 @@ export function LoginForm() {
         <Logo />
       </Icon>
       <Heading>umami</Heading>
-      <Form onSubmit={handleSubmit} error={getErrorMessage(error)} style={{ minWidth: 300 }}>
+      <Form
+        onSubmit={handleSubmit}
+        error={getErrorMessage(error)}
+        style={{ width: 375, maxWidth: 'calc(100vw - 32px)' }}
+      >
         <FormField
           label={t(labels.username)}
           data-test="input-username"
