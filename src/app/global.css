@@ -61,6 +61,10 @@ select:-webkit-autofill:focus {
   min-height: 100px;
 }
 
+.login-submit-button {
+  --primary: oklch(57.7% 0.245 27.325);
+}
+
 /* rrweb-player overrides */
 .rr-controller__btns {
   gap: 8px;
