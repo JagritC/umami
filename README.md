@@ -21,6 +21,8 @@
 
 A detailed getting started guide can be found at [umami.is/docs](https://umami.is/docs/).
 
+The Arcanist E2E runtime contract lives in `.arcanist.json`.
+
 ---
 
 ## 🛠 Installing from Source
